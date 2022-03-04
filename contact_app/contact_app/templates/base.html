@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact App</title>
+  <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+></script>
+  <style>
+    .card{
+      width: 600px;
+      height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      background-color: grey;
+      box-shadow: 2px;
+    }
+    input{
+      background-color: whitesmoke;
+    }
+    .Secret{
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png"
+        height="16"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px; width: 30px; height:30px;"
+      />
+    </a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact App</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+{% block navbar %}
+
+{% endblock %}
+</body>
+</html>

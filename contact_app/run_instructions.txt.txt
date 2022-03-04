@@ -1,0 +1,17 @@
+Instructions for Running the application
+=========================================
+
+Step 1: Unzip file
+Step 2: Open file using a python ide
+Step 3: Activate environment using command - venv/Scripts/activate
+Step 4: Open xamp server and create a database Name- contact app
+Step 5: Run the commands
+  Python manage py makemigrations
+  Python manage.py migrate
+  And python manage.py runserver
+Step 6: Click the link and it will redirected to project ui
+ 
+If python manage.py command is not running.
+Install django using 
+pip install django
+

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block navbar %}
+<div class="card">
+  <h2 style="margin-left: auto;margin-right: auto;">Sign In</h2>
+    <form action="/login/" method="post">
+      {% csrf_token %}
+  <!-- Email input -->
+  <div class="form-outline mb-4 Secret">
+    <input type="email" name="email" id="form2Example1" class="form-control" />
+    <label class="form-label" for="form2Example1">Email address</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4 Secret">
+    <input type="password" name="pword" id="form2Example2" class="form-control" />
+    <label class="form-label" for="form2Example2">Password</label>
+  </div> 
+  <!-- Submit button -->
+
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+  
+  <!-- Register buttons --> 
+  <div class="text-center">
+    <p>Not a member? <a href="/register/">SignUp</a></p>
+  
+  </div>
+</form>
+</div>
+</div>
+{% endblock %}
